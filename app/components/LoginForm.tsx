@@ -38,8 +38,7 @@ const LoginPage = () => {
     };
 
     return (
-        <div className="min-h-screen grid grid-cols-1 md:grid-cols-12">
-
+        <div className="min-h-screen grid grid-cols-1 md:grid-cols-12 cursor-pointer">
             {/* Left Side (Form) */}
             <div className="md:col-span-6 flex items-center justify-center p-4">
                 <form
@@ -47,13 +46,13 @@ const LoginPage = () => {
                     className="w-full max-w-lg p-8"
                 >
                     <h2 className="text-2xl font-extrabold text-center ">Get Started 💕</h2>
-                    <p className="text-center text-sm text-gray-500 mb-6">Our Whole Documented Story !! </p>
+                    <p className="text-center text-sm text-gray-500 mb-6 mt-1">Our Whole Documented Love Story !! </p>
                     <input
                         type="text"
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
-                        placeholder="Username"
-                        className="w-full p-3 mb-4 border border-neutral-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500"
+                        placeholder="Enter Username"
+                        className="w-full p-4 mb-4 border text-sm border-neutral-200 rounded-xl focus:outline-none focus:ring-1 focus:ring-blue-500"
                         required
                     />
                     <div className="relative mb-4">
@@ -61,8 +60,8 @@ const LoginPage = () => {
                             type={passwordVisible ? 'text' : 'password'}
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
-                            placeholder="Password"
-                            className="w-full p-3 border border-neutral-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500"
+                            placeholder="Enter Password"
+                            className="w-full p-4 border text-sm border-neutral-200 rounded-xl focus:outline-none focus:ring-1 focus:ring-blue-500"
                             required
                         />
                         <button
@@ -79,10 +78,11 @@ const LoginPage = () => {
                     </div>
                     <button
                         type="submit"
-                        className="w-full bg-neutral-900 text-white p-3 rounded-lg hover:bg-neutral-800 tracking-wider"
+                        className="w-full bg-neutral-900 text-white p-3 rounded-xl hover:bg-neutral-800 tracking-wider"
                     >
                         Login
                     </button>
+                    <p className="text-right my-4 text-gray-500 hover:underline">← Go Back</p>
                     {error && <p className="text-red-500 text-center mt-4">{error}</p>}
                 </form>
             </div>
