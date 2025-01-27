@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { EyeIcon, EyeSlashIcon } from '@heroicons/react/24/outline';
 import confetti from 'canvas-confetti';
+import Link from "next/link";
+
 
 const LoginPage = () => {
     const router = useRouter();
@@ -82,7 +84,9 @@ const LoginPage = () => {
                     >
                         Login
                     </button>
-                    <p className="text-right my-4 text-gray-500 hover:underline">← Go Back</p>
+                    <Link href="/home">
+                        <p className="text-right my-4 text-sm text-gray-500 hover:underline">← Go Back</p>
+                    </Link>
                     {error && <p className="text-red-500 text-center mt-4">{error}</p>}
                 </form>
             </div>

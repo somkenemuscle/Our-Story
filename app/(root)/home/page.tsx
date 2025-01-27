@@ -1,9 +1,13 @@
-'use client'; 
+'use client';
 import AuthProtection from "@/app/components/middleware/AuthProtection"
+import HeroSection from "@/app/components/ui/HeroSection";
+
 
 const Homepage = () => {
   return (
-    <div>Homepage</div>
+    <div>
+      <HeroSection />
+    </div>
   )
 }
 
