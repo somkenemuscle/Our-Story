@@ -3,108 +3,40 @@
 @tailwind utilities;
 
 .navbar {
-    font-family: sans-serif;
-    box-shadow: 0 0 10px 1px rgba(56, 55, 53, 0.2);
-    border: 2px solid rgb(37, 35, 34);
-  }
-  
+  font-family: sans-serif;
+  box-shadow: 0 0 10px 1px rgba(56, 55, 53, 0.2);
+  border: 2px solid rgb(37, 35, 34);
+}
+
 @keyframes pulse-ring {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
 
-    70% {
-        transform: scale(2.5);
-        opacity: 0;
-    }
+  70% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
 
-    100% {
-        transform: scale(3);
-        opacity: 0;
-    }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
 }
 
 .animate-pulse-ring {
-    animation: pulse-ring 1.1s infinite;
+  animation: pulse-ring 1.1s infinite;
 }
 
-.gallery-container {
-    position: relative;
-    height: 500px;
-    width: 100%;
-    overflow: hidden;
-    }
-    
-    .gallery-gradient {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 48px;
-    z-index: 10;
-    }
-    
-    .gallery-gradient-left {
-    left: 0;
-    background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, #060606 100%);
-    }
-    
-    .gallery-gradient-right {
-    right: 0;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #060606 100%);
-    }
-    
-    .gallery-content {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-    }
-    
-    .gallery-track {
-    display: flex;
-    height: auto;
-    min-height: 200px;
-    justify-content: center;
-    align-items: center;
-    cursor: grab;
-    transform-style: preserve-3d;
-    width: 100%;
-    }
-    
-    .gallery-item {
-    position: absolute;
-    display: flex;
-    height: fit-content;
-    align-items: center;
-    justify-content: center;
-    padding: 8%;
-    backface-visibility: hidden;
-    }
-    
-    .gallery-img {
-    pointer-events: none;
-    height: 120px;
-    width: 300px;
-    border-radius: 15px;
-    border: 3px solid #fff;
-    object-fit: cover;
-    transition: 0.3s ease;
-    }
-    
-    .gallery-item:hover .gallery-img {
-    transform: scale(1.05);
-    transition: 0.3s ease;
-    }
-    
-    @media (max-width: 768px) {
-    .gallery-item {
-      padding: 6%;
-    }
-    .gallery-img {
-      height: 100px;
-      width: 220px;
-    }
-    }
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, and Opera */
+}

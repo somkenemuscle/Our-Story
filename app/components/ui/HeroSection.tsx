@@ -1,11 +1,18 @@
 'use client'
 
+import confetti from "canvas-confetti";
+import { useEffect } from "react";
+import { Hero_Section_videos } from "@/constants/videos";
+
 const HeroSection = () => {
-    const videos = [
-        'https://ipw88zuno5.ufs.sh/f/rXxdhjbFRcsm4vGq3QvtvwfBx9MaGErO8DgbyPUXmAqQ2h6N',
-        'https://ipw88zuno5.ufs.sh/f/rXxdhjbFRcsmddd5bFUPTDlNk8g3IuQaFEWtqVmos69YfOvd',
-        'https://ipw88zuno5.ufs.sh/f/rXxdhjbFRcsmbp5GIk8H6zZjQvNLOUEr7k5I4yhDWBGaSiu0'
-    ];
+    useEffect(() => {
+        confetti({
+            particleCount: 700,
+            spread: 7000,
+            origin: { x: 0.5, y: 1 },
+        });
+    }, []);
+
 
     return (
         <section className="bg-neutral-950 py-24">
@@ -29,11 +36,13 @@ const HeroSection = () => {
                 </p>
 
                 {/* video section */}
-                <section className="bg-neutral-900 mt-20 p-10 rounded-3xl border max-w-5xl mx-auto  border-neutral-700">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        {videos.map((video, index) => (
-                            <div key={index} className="rounded-3xl overflow-hidden">
-                                <video className="w-full" src={video} autoPlay loop muted playsInline ></video>
+                <section className="bg-neutral-900 mt-20 p-10 rounded-3xl border max-w-5xl mx-auto cursor-pointer  border-neutral-700">
+                    <div className="flex gap-4 overflow-x-scroll scrollbar-hide">
+                        {Hero_Section_videos.map((video, index) => (
+                            <div
+                                key={index}
+                                className="rounded-3xl overflow-hidden flex-shrink-0 w-full md:w-[30%]">
+                                <video className="w-full" src={video} autoPlay loop muted playsInline></video>
                             </div>
                         ))}
                     </div>

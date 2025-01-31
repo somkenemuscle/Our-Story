@@ -33,7 +33,9 @@ const Story = () => {
                 long as we could, until you left Aptech.
             </p>
             <p className="mt-5">
-                This period was tough—brutal, in fact. But there was also fun. It was during this time that we had our first kiss 😂—I remember how it felt. We both do. It was so special.
+                This period was tough—brutal, in fact. But there was also fun. It was during this time that we had our first kiss 😂—I remember how it felt. We both do. Also the
+                first time we held hands and we were both shy and used our bags to cover our hands 😭, the first time we watched a movie together , i remember the name of
+                the movie like it was yesterday - <b>"Nobody’s Fool"</b> . It was so so so special.
                 Amidst the emotional rollercoaster, you started growing—your skills in HTML, CSS, and coding in general began to shine. It was incredible watching you evolve.
 
             </p>
@@ -68,7 +70,7 @@ const Story = () => {
             <p className="mt-5">
                 I love you so, so, so, so much, and I am so proud of the God-fearing, strong, emotionally intelligent, and hardworking woman you’ve become.
                 <br />
-                Happy 18th birthday 🎉, my love. Mauhhhhhhhhh ❤️!
+                <b>Happy 18th birthday 🎉, my love. Mauhhhhhhhhh!! ❤️</b>
             </p>
         </section>
     )

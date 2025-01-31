@@ -20,7 +20,7 @@ const Navbar = () => {
                     ))}
                     <Link href='#'>
                         <li className="bg-neutral-800 text-white rounded-full px-4 py-2 transition duration-300 ease-in-out hover:bg-neutral-900 border border-neutral-700">
-                            <span className="animate-pulse-ring inline-block bg-blue-400 rounded-full w-2 h-2 mr-2"></span> {currentDate}
+                            <span className="animate-pulse-ring inline-block mr-2">💙</span> {currentDate}
                         </li>
                     </Link>
                 </ul>
