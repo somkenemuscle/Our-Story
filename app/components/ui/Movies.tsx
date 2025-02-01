@@ -3,7 +3,7 @@ import { moviesWatched } from "@/constants/movies"
 
 const Movies = () => {
     return (
-        <div className="max-w-6xl mx-auto mt-32 px-5 py-10">
+        <div className="max-w-6xl mx-auto mt-32  py-10 mb-28">
             <h2 className="text-5xl font-bold text-black mb-2">Movies We've Watched Together 🎥</h2>
             <p className="text-gray-600 mb-10">From our first movie night to the latest! 🍿💖</p>
 

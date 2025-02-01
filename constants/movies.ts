@@ -30,6 +30,17 @@ export const moviesWatched = [
         comment: "I remember this one  😭😭",
     },
     {
+        title: "Talk To Me",
+        image: "https://cdn.kinocheck.com/i/hmm98qaa0c.jpg",
+        rating: 9,
+        comment: "One of the many horror movies we have watched together 🎃",
+    }, {
+        title: "Long Legs",
+        image: "https://awsimages.detik.net.id/community/media/visual/2024/07/11/longlegs-1.png?w=650&q=80",
+        rating: 9.5,
+        comment: "Our first horror movie, it was magnificent 🎃",
+    },
+    {
         title: "Time Cut",
         image: "https://assets.gadgets360cdn.com/pricee/assets/product/202409/Time-Cut_1726224917.jpg",
         rating: 9,

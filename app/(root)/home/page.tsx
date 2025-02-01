@@ -12,8 +12,8 @@ const Homepage = () => {
       <HeroSection />
       <Story />
       <Memories />
-      <GamesPlayed />
       <Movies />
+      <GamesPlayed />
     </div>
   )
 }
