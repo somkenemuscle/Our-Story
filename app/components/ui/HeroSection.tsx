@@ -42,7 +42,7 @@ const HeroSection = () => {
                             <div
                                 key={index}
                                 className="rounded-3xl overflow-hidden flex-shrink-0 w-full md:w-[30%]">
-                                <video className="w-full" src={video} autoPlay loop muted playsInline></video>
+                                <video className="w-full" src={video} autoPlay muted playsInline></video>
                             </div>
                         ))}
                     </div>
