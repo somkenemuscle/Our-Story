@@ -32,7 +32,7 @@ const HeroSection = () => {
                     Of Us!
                 </header>
                 <p className="text-center text-gray-300  font-mono text-sm mt-4">A Journey From <span className="font-bold">
-                    First Hello </span>👋 to<span className="font-bold"> Forever!</span>
+                    First Hello </span> 👋 to<span className="font-bold"> Forever!</span>
                 </p>
 
                 {/* video section */}
