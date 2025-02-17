@@ -64,4 +64,11 @@ export const moviesWatched = [
         rating: 10,
         comment: "My favourite Horror movie so far , we must finish this as well 🎃",
     },
+    {
+        title: "Blackish",
+        image: "https://m.media-amazon.com/images/M/MV5BMzc5MTQ1OGUtMmY5ZS00OWUwLTk4ZDgtMjViODU1MGUxMGZhXkEyXkFqcGc@._V1_.jpg",
+        rating: 9,
+        comment: "Well we just started this recently sooooooo ...... :)",
+    }
 ];
+
